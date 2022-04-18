@@ -14,4 +14,7 @@ class LanguageEn extends Languages {
 
   @override
   String get cameraNotFound => 'Camera Not initialized';
+
+  @override
+  String get imageTaken => 'Image taken and sent to server for analyze';
 }

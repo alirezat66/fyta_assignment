@@ -124,7 +124,7 @@ class _CameraPageState extends State<CameraPage>
         debugPrint(imageFile.path);
         context.read<SearchCubit>().searchByImage(imageFile);
 
-        MotionToast.success(description: const Text('Image take'))
+        MotionToast.success(description:  Text(Languages.of(context).imageTaken))
             .show(context);
       }
     });
