@@ -14,7 +14,7 @@ class CameraButtons extends StatelessWidget {
     return Container(
       height: kToolbarHeight * 2,
       width: MediaQuery.of(context).size.width,
-      color: Colors.black.withOpacity(0.5),
+      color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
       child: Stack(
         alignment: Alignment.center,
         children: [
