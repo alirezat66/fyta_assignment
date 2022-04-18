@@ -73,7 +73,7 @@ class ResultItemWidget extends StatelessWidget {
                         style: Theme.of(context)
                             .textTheme
                             .bodyText1!
-                            .copyWith(color: Colors.black),
+                            .copyWith(color: Theme.of(context).colorScheme.onSurface),
                         overflow: TextOverflow.ellipsis,
                       ),
                       const SizedBox(
@@ -85,7 +85,7 @@ class ResultItemWidget extends StatelessWidget {
                         style: Theme.of(context)
                             .textTheme
                             .subtitle1!
-                            .copyWith(color: Colors.black),
+                            .copyWith(color:  Theme.of(context).colorScheme.onSurface),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],
