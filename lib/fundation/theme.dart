@@ -20,13 +20,13 @@ final fytaTheme = ThemeData(
     bodyText1: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w600,
-        color: Colors.white,
+        color: Colors.black,
         fontFamily: 'Avenir'),
     subtitle1: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-        color: Colors.white,
-        fontFamily: 'Avenir'),
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+    ),
   ),
   appBarTheme: const AppBarTheme(
       elevation: 0,

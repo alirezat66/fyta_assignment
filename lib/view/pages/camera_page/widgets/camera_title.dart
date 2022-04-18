@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../fundation/languages/languages.dart';
+import '../../../../fundation/languages/languages.dart';
+
 
 class CameraTitle extends StatelessWidget {
   const CameraTitle({Key? key}) : super(key: key);

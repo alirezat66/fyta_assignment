@@ -9,7 +9,7 @@ class SearchRepositoryImpl implements SearchRepository {
   SearchRepositoryImpl(this.api);
   @override
   Future<SearchResults> searchByImage(File file) async {
-    final response = await api.postFileAsync('identify/all');
+    final response = await api.postFileAsync('identify/all', file);
     return SearchResults.fromJson(response.data);
   }
 }

@@ -74,10 +74,9 @@ class MockFytaApi extends _i1.Mock implements _i3.FytaApi {
       (super.noSuchMethod(Invocation.getter(#interceptors),
           returnValue: _FakeInterceptors_3()) as _i2.Interceptors);
   @override
-  _i5.Future<_i2.Response<dynamic>> postFileAsync(String? endPoint,
-          {_i6.File? file}) =>
-      (super.noSuchMethod(
-              Invocation.method(#postFileAsync, [endPoint], {#file: file}),
+  _i5.Future<_i2.Response<dynamic>> postFileAsync(
+          String? endPoint, _i6.File? file) =>
+      (super.noSuchMethod(Invocation.method(#postFileAsync, [endPoint, file]),
               returnValue: Future<_i2.Response<dynamic>>.value(
                   _FakeResponse_4<dynamic>()))
           as _i5.Future<_i2.Response<dynamic>>);

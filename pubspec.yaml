@@ -47,4 +47,5 @@ flutter:
     - images/icons/gallery_icon.svg
     - assets/
     - assets/loading.json
+    - .env
 

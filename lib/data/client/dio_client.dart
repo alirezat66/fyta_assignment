@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -8,27 +9,25 @@ class FytaApi with DioMixin implements Dio {
   FytaApi() {
     options = BaseOptions(
       baseUrl: _baseUrl(),
-      contentType: 'application/json',
+      contentType: 'multipart/form-data',
       connectTimeout: 30000,
       sendTimeout: 30000,
       receiveTimeout: 30000,
     );
+    httpClientAdapter = DefaultHttpClientAdapter();
   }
-  Future<Response> postFileAsync(String endPoint, {File? file}) async {
-    String base = '${_baseUrl()}?api-key=${_getKey()}';
+  Future<Response> postFileAsync(String endPoint, File file) async {
+    String base = '${_baseUrl()}$endPoint?api-key=${_getKey()}';
 
-    String fileName = file!.path.split('/').last;
+    debugPrint(base);
     FormData data = FormData.fromMap({
-      "images": await MultipartFile.fromFile(
-        file.path,
-        filename: fileName,
-      ),
+      "images": [
+        await MultipartFile.fromFile(file.path, filename: 'image.jpg')
+      ],
     });
-    debugPrint("$base$endPoint");
-    var response = await post(
-      "$base$endPoint",
-      data: data,
-    );
+
+    var response = await post(base, data: data);
+    debugPrint(response.statusCode.toString());
     return response;
   }
 
@@ -38,7 +37,7 @@ class FytaApi with DioMixin implements Dio {
   }
 
   _getKey() {
-    String key = dotenv.env['api-key'] as String;
+    String key = dotenv.env['key'] as String;
     return key;
   }
 }
