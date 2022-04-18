@@ -9,4 +9,5 @@ abstract class Languages {
   String get notFoundResult;
   String get notFoundDesc;
   String get notFoundButtonTitle;
+  String get cameraNotFound;
 }

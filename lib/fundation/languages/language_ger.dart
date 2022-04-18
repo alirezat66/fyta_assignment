@@ -15,4 +15,8 @@ class LanguageGer extends Languages {
   @override
   // TODO: implement notFoundResult
   String get notFoundResult => throw UnimplementedError();
+
+  @override
+  // TODO: implement cameraNotFound
+  String get cameraNotFound => throw UnimplementedError();
 }

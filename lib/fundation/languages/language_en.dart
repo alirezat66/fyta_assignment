@@ -11,4 +11,7 @@ class LanguageEn extends Languages {
 
   @override
   String get notFoundDesc => 'Retake Photo';
+
+  @override
+  String get cameraNotFound => 'Camera Not initialized';
 }
