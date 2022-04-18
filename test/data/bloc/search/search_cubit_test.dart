@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fyta_assignment/data/bloc/cubit/search_cubit.dart';
+import 'package:fyta_assignment/bloc/fyta_bloc.dart';
 import 'package:fyta_assignment/data/responses/search_results.dart';
 import 'package:mockito/mockito.dart';
 

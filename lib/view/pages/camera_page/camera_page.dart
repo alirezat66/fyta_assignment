@@ -19,7 +19,6 @@ class _CameraPageState extends State<CameraPage>
     with WidgetsBindingObserver, TickerProviderStateMixin {
   CameraController? controller;
   XFile? imageFile;
-  bool isAnimated = true;
   @override
   void initState() {
     _ambiguate(WidgetsBinding.instance)?.addObserver(this);
@@ -54,9 +53,7 @@ class _CameraPageState extends State<CameraPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: isAnimated
-          ? const LoadingWidget()
-          : Stack(
+      body: Stack(
               alignment: Alignment.center,
               children: [
                 (controller == null || !controller!.value.isInitialized)
