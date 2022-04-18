@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:fyta_assignment/fundation/languages/languages.dart';
 import 'package:fyta_assignment/view/pages/widgets/camera_buttons.dart';
 import 'package:fyta_assignment/view/pages/widgets/camera_view.dart';
+import 'package:fyta_assignment/view/widgets/loading_widget.dart';
 import 'package:motion_toast/motion_toast.dart';
 
 import '../../../main.dart';
@@ -18,7 +19,7 @@ class _CameraPageState extends State<CameraPage>
     with WidgetsBindingObserver, TickerProviderStateMixin {
   CameraController? controller;
   XFile? imageFile;
-
+  bool isAnimated = true;
   @override
   void initState() {
     _ambiguate(WidgetsBinding.instance)?.addObserver(this);
@@ -53,46 +54,48 @@ class _CameraPageState extends State<CameraPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        alignment: Alignment.center,
-        children: [
-          (controller == null || !controller!.value.isInitialized)
-              ? TextButton(
-                  onPressed: () => _initialize(),
-                  child: const Text(
-                    'Camera Not initialized',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.w900,
-                    ),
+      body: isAnimated
+          ? const LoadingWidget()
+          : Stack(
+              alignment: Alignment.center,
+              children: [
+                (controller == null || !controller!.value.isInitialized)
+                    ? TextButton(
+                        onPressed: () => _initialize(),
+                        child: const Text(
+                          'Camera Not initialized',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      )
+                    : CameraView(
+                        cameraController: controller!,
+                      ),
+                Positioned(
+                  top: 0,
+                  child: Container(
+                    height: kToolbarHeight * 2,
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.black.withOpacity(0.5),
+                    child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 20),
+                          child: Text(Languages.of(context).photoTitle),
+                        )),
                   ),
-                )
-              : CameraView(
-                  cameraController: controller!,
                 ),
-          Positioned(
-            top: 0,
-            child: Container(
-              height: kToolbarHeight * 2,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.black.withOpacity(0.5),
-              child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 20),
-                    child: Text(Languages.of(context).photoTitle),
-                  )),
+                Positioned(
+                    bottom: 0,
+                    child: CameraButtons(
+                      onGallerySelect: () {},
+                      onTakePhoto: () {},
+                    )),
+              ],
             ),
-          ),
-          Positioned(
-              bottom: 0,
-              child: CameraButtons(
-                onGallerySelect: () {},
-                onTakePhoto: () {},
-              )),
-        ],
-      ),
     );
   }
 
