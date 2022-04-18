@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:fyta_assignment/fundation/route/fyta_route.dart';
 import 'package:fyta_assignment/fundation/route/general_route.dart';
@@ -9,6 +10,7 @@ import 'fundation/languages/app_localization_delegate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
   try {
     cameras = await availableCameras();
   } on CameraException catch (e) {

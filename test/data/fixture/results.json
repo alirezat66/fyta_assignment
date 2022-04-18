@@ -1,0 +1,456 @@
+{
+    "query": {
+        "project": "all",
+        "images": [
+            "ebdbc809816e7d4fd597cb30442c355c"
+        ],
+        "organs": [
+            "auto"
+        ],
+        "includeRelatedImages": false
+    },
+    "language": "en",
+    "preferedReferential": "weurope",
+    "bestMatch": "Rosa x odorata (Andrews) Sweet",
+    "results": [
+        {
+            "score": 0.34203,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa x odorata",
+                "scientificNameAuthorship": "(Andrews) Sweet",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Tea rose",
+                    "Spice Humes blush"
+                ],
+                "scientificName": "Rosa x odorata (Andrews) Sweet"
+            },
+            "gbif": {
+                "id": "3009087"
+            }
+        },
+        {
+            "score": 0.08171,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa luciae",
+                "scientificNameAuthorship": "Franch. & Rochebr.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Memorial Rose",
+                    "Wichura's rose"
+                ],
+                "scientificName": "Rosa luciae Franch. & Rochebr."
+            },
+            "gbif": {
+                "id": "3008275"
+            }
+        },
+        {
+            "score": 0.02514,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa chinensis",
+                "scientificNameAuthorship": "Jacq.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Bengal rose",
+                    "China Rose",
+                    "Chinese rose"
+                ],
+                "scientificName": "Rosa chinensis Jacq."
+            },
+            "gbif": {
+                "id": "3005039"
+            }
+        },
+        {
+            "score": 0.01237,
+            "species": {
+                "scientificNameWithoutAuthor": "Camellia japonica",
+                "scientificNameAuthorship": "L.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Camellia",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Camellia L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Theaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Theaceae"
+                },
+                "commonNames": [
+                    "Camellia",
+                    "Japanese Camellia",
+                    "Camellia Albino Botti"
+                ],
+                "scientificName": "Camellia japonica L."
+            },
+            "gbif": {
+                "id": "3189636"
+            }
+        },
+        {
+            "score": 0.01041,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa gallica",
+                "scientificNameAuthorship": "L.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "French rose",
+                    "Red Provins Rose",
+                    "Red Rose"
+                ],
+                "scientificName": "Rosa gallica L."
+            },
+            "gbif": {
+                "id": "3002530"
+            }
+        },
+        {
+            "score": 0.00674,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa bracteata",
+                "scientificNameAuthorship": "J.C.Wendl.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Macartney rose"
+                ],
+                "scientificName": "Rosa bracteata J.C.Wendl."
+            },
+            "gbif": {
+                "id": "3004659"
+            }
+        },
+        {
+            "score": 0.0039,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa caesia",
+                "scientificNameAuthorship": "Sm.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Hairy Dog-rose"
+                ],
+                "scientificName": "Rosa caesia Sm."
+            },
+            "gbif": {
+                "id": "3002191"
+            }
+        },
+        {
+            "score": 0.00363,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa x damascena",
+                "scientificNameAuthorship": "Mill.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Damascene Rose",
+                    "Damask Rose",
+                    "Bussora rose"
+                ],
+                "scientificName": "Rosa x damascena Mill."
+            },
+            "gbif": {
+                "id": "7390572"
+            }
+        },
+        {
+            "score": 0.00285,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa cinnamomea",
+                "scientificNameAuthorship": "L.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Cinnamon Rose",
+                    "Double cinnamon rose"
+                ],
+                "scientificName": "Rosa cinnamomea L."
+            },
+            "gbif": {
+                "id": "7656220"
+            }
+        },
+        {
+            "score": 0.00252,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa abietina",
+                "scientificNameAuthorship": "Gren. ex H.Christ",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Pine Rose",
+                    "Patio Rose"
+                ],
+                "scientificName": "Rosa abietina Gren. ex H.Christ"
+            },
+            "gbif": {
+                "id": "3005999"
+            }
+        },
+        {
+            "score": 0.00233,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa ferruginea",
+                "scientificNameAuthorship": "Vill.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Blue-leaved Rose",
+                    "Red-leaved Rose",
+                    "Redleaf rose"
+                ],
+                "scientificName": "Rosa ferruginea Vill."
+            },
+            "gbif": {
+                "id": "8684350"
+            }
+        },
+        {
+            "score": 0.00221,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa sherardii",
+                "scientificNameAuthorship": "Davies",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Sherard's Downy-rose",
+                    "Sherard's downy rose"
+                ],
+                "scientificName": "Rosa sherardii Davies"
+            },
+            "gbif": {
+                "id": "3003017"
+            }
+        },
+        {
+            "score": 0.00208,
+            "species": {
+                "scientificNameWithoutAuthor": "Camellia saluenensis",
+                "scientificNameAuthorship": "Stapf ex Bean",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Camellia",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Camellia L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Theaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Theaceae"
+                },
+                "commonNames": [],
+                "scientificName": "Camellia saluenensis Stapf ex Bean"
+            },
+            "gbif": {
+                "id": "7313945"
+            }
+        },
+        {
+            "score": 0.00186,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa montana",
+                "scientificNameAuthorship": "Chaix",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [],
+                "scientificName": "Rosa montana Chaix"
+            },
+            "gbif": {
+                "id": "8180637"
+            }
+        },
+        {
+            "score": 0.0014,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa blondaeana",
+                "scientificNameAuthorship": "Ripart ex Déségl.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [],
+                "scientificName": "Rosa blondaeana Ripart ex Déségl."
+            },
+            "gbif": {
+                "id": "7986428"
+            }
+        },
+        {
+            "score": 0.0011,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa moschata",
+                "scientificNameAuthorship": "Herrm.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [
+                    "Musk Rose"
+                ],
+                "scientificName": "Rosa moschata Herrm."
+            },
+            "gbif": {
+                "id": "3005529"
+            }
+        },
+        {
+            "score": 0.00108,
+            "species": {
+                "scientificNameWithoutAuthor": "Rosa moyesii",
+                "scientificNameAuthorship": "Hemsl. & E.H.Wilson",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rosa",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rosa L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Rosaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Rosaceae"
+                },
+                "commonNames": [],
+                "scientificName": "Rosa moyesii Hemsl. & E.H.Wilson"
+            },
+            "gbif": {
+                "id": "3007073"
+            }
+        },
+        {
+            "score": 0.00107,
+            "species": {
+                "scientificNameWithoutAuthor": "Rhododendron kaempferi",
+                "scientificNameAuthorship": "Planch.",
+                "genus": {
+                    "scientificNameWithoutAuthor": "Rhododendron",
+                    "scientificNameAuthorship": "L.",
+                    "scientificName": "Rhododendron L."
+                },
+                "family": {
+                    "scientificNameWithoutAuthor": "Ericaceae",
+                    "scientificNameAuthorship": "",
+                    "scientificName": "Ericaceae"
+                },
+                "commonNames": [],
+                "scientificName": "Rhododendron kaempferi Planch."
+            },
+            "gbif": {
+                "id": "7135965"
+            }
+        }
+    ],
+    "version": "2022-02-14 (5.1)",
+    "remainingIdentificationRequests": 498
+}
