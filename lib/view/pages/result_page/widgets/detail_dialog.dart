@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 class DetailDialog extends StatelessWidget {
   final File file;
   final String name;
-  const DetailDialog({Key? key, required this.file, required this.name})
+  final String id;
+  const DetailDialog(
+      {Key? key, required this.file, required this.name, required this.id})
       : super(key: key);
 
   @override
@@ -27,9 +29,12 @@ class DetailDialog extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  name,
-                  overflow: TextOverflow.ellipsis,
+                child: Hero(
+                  tag: 'text$id',
+                  child: Text(
+                    name,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                 ),
               ),
               AspectRatio(
@@ -39,9 +44,12 @@ class DetailDialog extends StatelessWidget {
                       bottomLeft: Radius.circular(16),
                       bottomRight: Radius.circular(16),
                     ),
-                    child: Image.file(
-                      file,
-                      fit: BoxFit.fitHeight,
+                    child: Hero(
+                      tag: 'image$id',
+                      child: Image.file(
+                        file,
+                        fit: BoxFit.fitHeight,
+                      ),
                     ),
                   ))
             ],

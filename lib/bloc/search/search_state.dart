@@ -11,6 +11,8 @@ class SearchInitial extends SearchState {}
 
 class SearchLoading extends SearchState {}
 
+class SearchError extends SearchState {}
+
 class SearchLoaded extends SearchState {
   final SearchResults results;
   const SearchLoaded(this.results);

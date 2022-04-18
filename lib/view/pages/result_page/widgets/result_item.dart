@@ -9,10 +9,12 @@ class ResultItemWidget extends StatelessWidget {
   final String name;
   final String nameAuthorship;
   final double rate;
+  final String id;
   const ResultItemWidget(
       {Key? key,
       required this.imageFile,
       required this.name,
+      required this.id,
       required this.nameAuthorship,
       required this.rate})
       : super(key: key);
@@ -25,7 +27,7 @@ class ResultItemWidget extends StatelessWidget {
             context: context,
             barrierDismissible: true,
             builder: (context) {
-              return DetailDialog(file: imageFile, name: name);
+              return DetailDialog(file: imageFile, name: name, id: id);
             });
       },
       child: Container(
@@ -50,11 +52,14 @@ class ResultItemWidget extends StatelessWidget {
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(16),
                       bottomLeft: Radius.circular(16)),
-                  child: Image.file(
-                    imageFile,
-                    width: 150,
-                    height: 150,
-                    fit: BoxFit.cover,
+                  child: Hero(
+                    tag: 'image$id',
+                    child: Image.file(
+                      imageFile,
+                      width: 150,
+                      height: 150,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 )),
             Expanded(
@@ -67,14 +72,19 @@ class ResultItemWidget extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        name,
-                        maxLines: 2,
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyText1!
-                            .copyWith(color: Theme.of(context).colorScheme.onSurface),
-                        overflow: TextOverflow.ellipsis,
+                      Hero(
+                        tag: 'text$id',
+                        child: Text(
+                          name,
+                          maxLines: 2,
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyText1!
+                              .copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
                       const SizedBox(
                         height: 4,
@@ -82,10 +92,8 @@ class ResultItemWidget extends StatelessWidget {
                       Text(
                         nameAuthorship,
                         maxLines: 1,
-                        style: Theme.of(context)
-                            .textTheme
-                            .subtitle1!
-                            .copyWith(color:  Theme.of(context).colorScheme.onSurface),
+                        style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                            color: Theme.of(context).colorScheme.onSurface),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],

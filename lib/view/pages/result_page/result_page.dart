@@ -42,11 +42,11 @@ class ResultPage extends StatelessWidget {
             style: Theme.of(context).textTheme.bodyText1,
           ),
         ),
-        body: argument.results.results.isNotEmpty
+        body: argument.results != null
             // ignore: prefer_const_constructors
             ? ResultListView(
                 file: argument.file,
-                result: argument.results,
+                result: argument.results!,
               )
             : const Center(
                 child: NotFoundWidget(),

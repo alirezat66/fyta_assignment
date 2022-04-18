@@ -22,6 +22,7 @@ class ResultListView extends StatelessWidget {
               nameAuthorship:
                   result.results[index].species.scientificNameAuthorship,
               rate: result.results[index].score,
+              id: result.results[index].gbif.id,
             );
           },
           separatorBuilder: (context, index) {

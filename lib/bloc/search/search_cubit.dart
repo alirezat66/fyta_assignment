@@ -19,13 +19,15 @@ class SearchCubit extends Cubit<SearchState> {
       emit(SearchLoaded(result));
     } catch (e) {
       debugPrint(e.toString());
+      emit(SearchError());
     }
   }
 
   void takePhoto() {
     emit(SearchLoading());
   }
-  void initPageAgain(){
+
+  void initPageAgain() {
     emit(SearchInitial());
   }
 }

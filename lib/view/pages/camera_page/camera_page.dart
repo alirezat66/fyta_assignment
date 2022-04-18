@@ -66,6 +66,13 @@ class _CameraPageState extends State<CameraPage>
             Navigator.pushNamed(context, FytaRoute.resultScreen,
                 arguments:
                     ResultArgument(results: state.results, file: imageFile));
+          } else if (state is SearchError) {
+            MotionToast.error(
+                    description: const Text('Something is wrong in server side'))
+                .show(context);
+           Navigator.pushNamed(context, FytaRoute.resultScreen,
+                arguments:
+                    ResultArgument(results: null, file: imageFile));     
           }
         },
         child: BlocBuilder<SearchCubit, SearchState>(
@@ -124,7 +131,7 @@ class _CameraPageState extends State<CameraPage>
         debugPrint(imageFile.path);
         context.read<SearchCubit>().searchByImage(imageFile);
 
-        MotionToast.success(description:  Text(Languages.of(context).imageTaken))
+        MotionToast.success(description: Text(Languages.of(context).imageTaken))
             .show(context);
       }
     });
@@ -169,9 +176,9 @@ class _CameraPageState extends State<CameraPage>
     });
   }
 
-  void _selectImage() async{
-   final file=  await ImagePicker().pickImage(source: ImageSource.gallery);
-   if (file == null) {
+  void _selectImage() async {
+    final file = await ImagePicker().pickImage(source: ImageSource.gallery);
+    if (file == null) {
       return;
     }
     imageFile = File(file.path);
