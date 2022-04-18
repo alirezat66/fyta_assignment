@@ -8,10 +8,10 @@ final fytaTheme = ThemeData(
       fontFamily: 'Avenir',
     ),
     headline5: TextStyle(
-      fontSize: 21,
-      fontWeight: FontWeight.w500,
-      fontFamily: 'Avenir',
-    ),
+        fontSize: 20,
+        fontWeight: FontWeight.w600,
+        fontFamily: 'Avenir',
+        color: Color(0xff313133)),
     bodyText2: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w600,
@@ -45,7 +45,7 @@ final fytaTheme = ThemeData(
       error: Colors.redAccent,
       onPrimary: Colors.yellowAccent,
       onSecondary: Colors.green,
-      onSurface: Colors.white,
+      onSurface: Colors.black,
       onBackground: Colors.indigo,
       onError: Colors.pink,
       brightness: Brightness.dark),

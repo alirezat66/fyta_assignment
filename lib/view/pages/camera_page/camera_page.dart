@@ -9,6 +9,7 @@ import 'package:fyta_assignment/fundation/route/fyta_route.dart';
 import 'package:fyta_assignment/view/pages/camera_page/widgets/camera_buttons.dart';
 import 'package:fyta_assignment/view/pages/camera_page/widgets/camera_view.dart';
 import 'package:fyta_assignment/view/widgets/loading_widget.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:motion_toast/motion_toast.dart';
 
 import '../../../main.dart';
@@ -98,9 +99,11 @@ class _CameraPageState extends State<CameraPage>
                   Positioned(
                       bottom: 0,
                       child: CameraButtons(
-                        onGallerySelect: () {},
+                        onGallerySelect: () {
+                          _selectImage();
+                        },
                         onTakePhoto: () {
-                          onTakePictureButtonPressed();
+                          _onTakePictureButtonPressed();
                         },
                       )),
                 ],
@@ -112,7 +115,7 @@ class _CameraPageState extends State<CameraPage>
     );
   }
 
-  void onTakePictureButtonPressed() {
+  void _onTakePictureButtonPressed() {
     context.read<SearchCubit>().takePhoto();
     takePicture().then((XFile? file) async {
       if (mounted) {
@@ -164,6 +167,16 @@ class _CameraPageState extends State<CameraPage>
       }
       setState(() {});
     });
+  }
+
+  void _selectImage() async{
+   final file=  await ImagePicker().pickImage(source: ImageSource.gallery);
+   if (file == null) {
+      return;
+    }
+    imageFile = File(file.path);
+    debugPrint(imageFile.path);
+    context.read<SearchCubit>().searchByImage(imageFile);
   }
 }
 
