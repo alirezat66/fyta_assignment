@@ -67,12 +67,8 @@ class _CameraPageState extends State<CameraPage>
                 arguments:
                     ResultArgument(results: state.results, file: imageFile));
           } else if (state is SearchError) {
-            MotionToast.error(
-                    description: const Text('Something is wrong in server side'))
-                .show(context);
-           Navigator.pushNamed(context, FytaRoute.resultScreen,
-                arguments:
-                    ResultArgument(results: null, file: imageFile));     
+            Navigator.pushNamed(context, FytaRoute.resultScreen,
+                arguments: ResultArgument(results: null, file: imageFile));
           }
         },
         child: BlocBuilder<SearchCubit, SearchState>(

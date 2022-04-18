@@ -48,7 +48,7 @@ class DetailDialog extends StatelessWidget {
                       tag: 'image$id',
                       child: Image.file(
                         file,
-                        fit: BoxFit.fitHeight,
+                        fit: BoxFit.cover
                       ),
                     ),
                   ))

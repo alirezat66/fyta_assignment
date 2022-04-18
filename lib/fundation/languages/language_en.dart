@@ -7,10 +7,11 @@ class LanguageEn extends Languages {
   String get notFoundResult => 'We didn’t find your plant?';
 
   @override
-  String get notFoundButtonTitle => 'Retake the photo or send us the picutre so that we can help you find it.';
+  String get notFoundButtonTitle => 'Retake Photo';
 
   @override
-  String get notFoundDesc => 'Retake Photo';
+  String get notFoundDesc =>
+      'Retake the photo or send us the picutre so that we can help you find it.';
 
   @override
   String get cameraNotFound => 'Camera Not initialized';

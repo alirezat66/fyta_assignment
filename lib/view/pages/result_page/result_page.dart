@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fyta_assignment/view/pages/result_page/widgets/not_found_widget.dart';
-import 'package:fyta_assignment/view/pages/result_page/widgets/result_item.dart';
 import 'package:fyta_assignment/view/pages/result_page/widgets/result_list_view.dart';
 
 import '../../../data/argument/result_argument.dart';
