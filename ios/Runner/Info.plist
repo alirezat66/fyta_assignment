@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSCameraUsageDescription</key>
+<string>We need to camera permision for taking photo</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>We need to camera microphone to record video</string>
 	<key>CFBundleDisplayName</key>
 	<string>Fyta Assignment</string>
 	<key>CFBundleExecutable</key>

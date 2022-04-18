@@ -13,13 +13,13 @@ final fytaTheme = ThemeData(
       fontFamily: 'Avenir',
     ),
     bodyText2: TextStyle(
-        fontSize: 19,
-        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
         color: Colors.white,
         fontFamily: 'Avenir'),
     bodyText1: TextStyle(
-        fontSize: 23,
-        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
         color: Colors.white,
         fontFamily: 'Avenir'),
     subtitle1: TextStyle(
