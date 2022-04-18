@@ -39,7 +39,7 @@ final fytaTheme = ThemeData(
           color: Colors.white)),
   colorScheme: const ColorScheme(
       primary: Color(0xffA2EFAB),
-      secondary: Colors.blue,
+      secondary: Color(0xff313133),
       surface: Colors.white,
       background: Colors.black,
       error: Colors.redAccent,

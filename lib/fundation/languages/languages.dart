@@ -6,4 +6,7 @@ abstract class Languages {
   }
 
   String get photoTitle;
+  String get notFoundResult;
+  String get notFoundDesc;
+  String get notFoundButtonTitle;
 }

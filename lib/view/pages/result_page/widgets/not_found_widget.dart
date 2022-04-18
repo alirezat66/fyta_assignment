@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fyta_assignment/fundation/languages/languages.dart';
 
 class NotFoundWidget extends StatelessWidget {
   const NotFoundWidget({Key? key}) : super(key: key);
@@ -13,17 +14,17 @@ class NotFoundWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           Text(
-            'We didn’t find your plant?',
+            Languages.of(context).notFoundResult,
             style: Theme.of(context)
                 .textTheme
                 .headline5!
-                .copyWith(color: const Color(0xff313133)),
+                .copyWith(color: Theme.of(context).colorScheme.secondary),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
-            'Retake the photo or send us the picutre so that we can help you find it.',
+            Languages.of(context).notFoundDesc,
             style: Theme.of(context).textTheme.subtitle1!.copyWith(height: 1.6),
           ),
           const SizedBox(
@@ -35,7 +36,7 @@ class NotFoundWidget extends StatelessWidget {
                   Navigator.pop(context);
                 },
                 child: Text(
-                  'Retake Photo',
+                  Languages.of(context).notFoundButtonTitle,
                   style: Theme.of(context).textTheme.bodyText1,
                 )),
           )
