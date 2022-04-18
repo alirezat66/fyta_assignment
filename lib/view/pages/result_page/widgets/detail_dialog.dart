@@ -20,7 +20,7 @@ class DetailDialog extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
-            color: const Color(0xff313133),
+            color: Theme.of(context).colorScheme.secondary,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
