@@ -24,6 +24,7 @@ dependencies:
   image_picker: ^0.8.4+11
   image_cropper: ^1.5.0
   camera: ^0.9.4+19
+  flutter_lottie: ^0.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -42,4 +43,6 @@ flutter:
     - images/icons/
     - images/icons/camera_icon.svg
     - images/icons/gallery_icon.svg
+    - assets/
+    - assets/loading.json
 
